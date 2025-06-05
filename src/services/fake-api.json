@@ -1,0 +1,10 @@
+{
+    "usuarios": [
+        {
+            "id": "1",
+            "nombre": "Santiago Loaiza",
+            "usuario": "usuariosanti",
+            "contraseña": "contraseñasanti"
+        }
+    ]
+}
