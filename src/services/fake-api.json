@@ -1,10 +1,28 @@
 {
-    "usuarios": [
-        {
-            "id": "1",
-            "nombre": "Santiago Loaiza",
-            "usuario": "usuariosanti",
-            "contraseña": "contraseñasanti"
-        }
-    ]
+  "usuarios": [
+    {
+      "id": "1",
+      "nombres": "Santiago",
+      "apellidos": "Loaiza",
+      "usuario": "usuariosanti",
+      "contraseña": "contraseñasanti",
+      "historialLogin": [
+        "2025-06-06T19:05:45.570Z",
+        "2025-06-06T19:07:48.903Z",
+        "2025-06-07T18:28:20.469Z"
+      ]
+    },
+    {
+      "id": "7d93",
+      "nombres": "Camilo",
+      "apellidos": "Cifuentes",
+      "usuario": "cami21",
+      "contraseña": "cami21",
+      "correo": "cami21@gmail.com",
+      "historialLogin": [
+        "2025-06-07T18:48:04.628Z",
+        "2025-06-07T18:49:26.310Z"
+      ]
+    }
+  ]
 }
