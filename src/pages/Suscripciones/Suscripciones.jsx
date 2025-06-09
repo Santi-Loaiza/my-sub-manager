@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import './Suscripciones.css'
+import { Link } from "react-router-dom";
 let apiSuscripciones = 'http://localhost:3000/suscripciones'
 
 const Suscripciones = () => {
@@ -37,14 +38,16 @@ const Suscripciones = () => {
                     value={filtro}
                     onChange={(e) => setFiltro(e.target.value)}
                 />
-                <button className="nueva">+ Nueva suscripción</button>
+                <Link to="/panel-principal/agregar-suscripcion" >
+                    <button className="nueva">+ Nueva suscripción</button>
+                </Link>
             </div>
             <div className="lista">
                 {filtradas.map((sub) => (
                     <div key={sub.id} className="item">
                         <div>
                             <h3>{sub.nombre}</h3>
-                            <p>${sub.precio} / mes</p>
+                            <p>${sub.precio} / {sub.frecuencia}</p>
                             <span className="descripcion">{sub.descripcion}</span>
                         </div>
                         <div className="acciones-item">

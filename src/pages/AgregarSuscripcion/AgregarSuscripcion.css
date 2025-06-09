@@ -1,0 +1,262 @@
+.container-agregar-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 50%;
+    gap: 20px;
+}
+
+.container-agregar-form .back-icon-agregar {
+    width: 8%;
+    min-width: 35px;
+}
+
+.container-agregar-form .back-icon-agregar svg {
+    color: white;
+}
+
+.container-agregar-form .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
+    max-width: 500px;
+    padding: 25px;
+    gap: 5px;
+    border-radius: 20px;
+    position: relative;
+    background-color: #001a436f;
+    color: #fff;
+    border: 1px solid #033a826f;
+}
+
+.container-agregar-form .form .title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    color: #7a8efa;
+}
+
+.container-agregar-form .message,
+.container-agregar-form .signin {
+    font-size: 14.5px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.container-agregar-form .message {
+    margin-bottom: 25px;
+}
+
+.container-agregar-form .flex {
+    display: flex;
+    width: 90%;
+    gap: 6px;
+}
+
+.container-agregar-form .signin a:hover {
+    text-decoration: underline #2643e8;
+    color: #2643e8;
+}
+
+.container-agregar-form .signin a {
+    color: #7a8efa;
+}
+
+.container-agregar-form .form label {
+    position: relative;
+    width: 90%;
+}
+
+.container-agregar-form .form label .input {
+    background-color: #0d1031;
+    color: #fff;
+    width: 100%;
+    padding: 20px 05px 05px 10px;
+    outline: 0;
+    border: 1px solid #7a8efa;
+    border-radius: 10px;
+}
+
+.container-agregar-form .form label .input+span {
+    color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    left: 10px;
+    top: 0px;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+}
+
+.container-agregar-form .form label .input:placeholder-shown+span {
+    top: 12.5px;
+    font-size: 0.9em;
+}
+.container-agregar-form .select-container{
+    padding: 5px 1px;
+    text-align: center;
+    align-items: center;
+}
+.container-agregar-form .form .label-select{
+    font-size: 0.92rem;
+    color: #7a8efa;
+}
+.container-agregar-form .form .select-container select{
+    background-color: #0d1031;
+    color: #fff;
+    width: 80%;
+    padding: 10px 5px 10px 10px;
+    outline: 0;
+    border: 1px solid #7a8efa;
+    border-radius: 10px;
+    text-align: center;
+}
+.container-agregar-form .form label .input:focus+span,
+.container-agregar-form .form label .input:valid+span {
+    color: #7a8efa;
+    top: 0px;
+    font-size: 0.7em;
+    font-weight: 600;
+}
+
+.container-agregar-form .input {
+    font-size: medium;
+}
+.container-agregar-form .form .container-checkbox{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 5px 0px;
+}
+.container-agregar-form .form .checkbox {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* From Uiverse.io by Galahhad */ 
+/* checkbox settings 👇 */
+
+.ui-checkbox {
+  --primary-color: #155fc6;
+  --secondary-color: #fff;
+  --primary-hover-color: #4096ff;
+  /* checkbox */
+  --checkbox-diameter: 20px;
+  --checkbox-border-radius: 5px;
+  --checkbox-border-color: #d9d9d9;
+  --checkbox-border-width: 1px;
+  --checkbox-border-style: solid;
+  /* checkmark */
+  --checkmark-size: 1.2;
+}
+
+.ui-checkbox, 
+.ui-checkbox *, 
+.ui-checkbox *::before, 
+.ui-checkbox *::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.ui-checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: var(--checkbox-diameter);
+  height: var(--checkbox-diameter);
+  border-radius: var(--checkbox-border-radius);
+  background: var(--secondary-color);
+  border: var(--checkbox-border-width) var(--checkbox-border-style) var(--checkbox-border-color);
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: pointer;
+  position: relative;
+}
+
+.ui-checkbox::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-box-shadow: 0 0 0 calc(var(--checkbox-diameter) / 2.5) var(--primary-color);
+  box-shadow: 0 0 0 calc(var(--checkbox-diameter) / 2.5) var(--primary-color);
+  border-radius: inherit;
+  opacity: 0;
+  -webkit-transition: all 0.5s cubic-bezier(0.12, 0.4, 0.29, 1.46);
+  -o-transition: all 0.5s cubic-bezier(0.12, 0.4, 0.29, 1.46);
+  transition: all 0.5s cubic-bezier(0.12, 0.4, 0.29, 1.46);
+}
+
+.ui-checkbox::before {
+  top: 40%;
+  left: 50%;
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 7px;
+  border-right: 2px solid var(--secondary-color);
+  border-bottom: 2px solid var(--secondary-color);
+  -webkit-transform: translate(-50%, -50%) rotate(45deg) scale(0);
+  -ms-transform: translate(-50%, -50%) rotate(45deg) scale(0);
+  transform: translate(-50%, -50%) rotate(45deg) scale(0);
+  opacity: 0;
+  -webkit-transition: all 0.1s cubic-bezier(0.71, -0.46, 0.88, 0.6),opacity 0.1s;
+  -o-transition: all 0.1s cubic-bezier(0.71, -0.46, 0.88, 0.6),opacity 0.1s;
+  transition: all 0.1s cubic-bezier(0.71, -0.46, 0.88, 0.6),opacity 0.1s;
+}
+
+/* actions */
+
+.ui-checkbox:hover {
+  border-color: var(--primary-color);
+}
+
+.ui-checkbox:checked {
+  background: var(--primary-color);
+  border-color: transparent;
+}
+
+.ui-checkbox:checked::before {
+  opacity: 1;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg) scale(var(--checkmark-size));
+  -ms-transform: translate(-50%, -50%) rotate(45deg) scale(var(--checkmark-size));
+  transform: translate(-50%, -50%) rotate(45deg) scale(var(--checkmark-size));
+  -webkit-transition: all 0.2s cubic-bezier(0.12, 0.4, 0.29, 1.46) 0.1s;
+  -o-transition: all 0.2s cubic-bezier(0.12, 0.4, 0.29, 1.46) 0.1s;
+  transition: all 0.2s cubic-bezier(0.12, 0.4, 0.29, 1.46) 0.1s;
+}
+
+.ui-checkbox:active:not(:checked)::after {
+  -webkit-transition: none;
+  -o-transition: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  transition: none;
+  opacity: 1;
+}
+.container-agregar-form .form .container-checkbox span{
+    margin-left: 10px;
+    color: #8698fd;
+}
+.container-agregar-form .submit {
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;
+    background-color: #7a8efa;
+}
+
+.container-agregar-form .submit:hover {
+    background-color: #2643e8;
+}

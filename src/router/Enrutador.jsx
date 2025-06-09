@@ -1,4 +1,5 @@
 import RutaProtegida from "../components/RutaProtegida";
+import AgregarSuscripcion from "../pages/AgregarSuscripcion/AgregarSuscripcion";
 import Login from "../pages/Login/Login";
 import PanelPrincipal from "../pages/PanelPrincipal/PanelPrincipal";
 import Register from "../pages/Register/Register";
@@ -20,6 +21,10 @@ export let Enrutador = [
             {
                 path: "suscripciones",
                 element: <Suscripciones />
+            },
+            {
+                path: "agregar-suscripcion",
+                element: <AgregarSuscripcion />
             }
         ]
     }
