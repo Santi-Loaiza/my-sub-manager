@@ -39,6 +39,17 @@
       "historialLogin": [
         "2025-06-09T01:23:05.573Z"
       ]
+    },
+    {
+      "id": "e63a",
+      "nombres": "Maria",
+      "apellidos": "Fernanda",
+      "usuario": "mafe01",
+      "contraseña": "mafe01",
+      "correo": "mariafernanda@gmail.com",
+      "historialLogin": [
+        "2025-06-09T21:48:28.035Z"
+      ]
     }
   ],
   "suscripciones": [
@@ -50,7 +61,7 @@
       "frecuencia": "mensual",
       "descripcion": "Plan estándar con 2 pantallas",
       "categoria": "Entretenimiento",
-      "fechaInicio": "2025-06-01T00:00:00.000Z",
+      "fechaInicio": "2025-06-01",
       "renovacionAutomatica": true,
       "estado": "activa"
     },
@@ -62,7 +73,7 @@
       "frecuencia": "mensual",
       "descripcion": "Cuenta premium individual",
       "categoria": "Entretenimiento",
-      "fechaInicio": "2025-05-15T00:00:00.000Z",
+      "fechaInicio": "2025-05-15",
       "renovacionAutomatica": true,
       "estado": "activa"
     },
@@ -74,7 +85,7 @@
       "frecuencia": "mensual",
       "descripcion": "Plan personal pro",
       "categoria": "Productividad",
-      "fechaInicio": "2025-04-20T00:00:00.000Z",
+      "fechaInicio": "2025-04-20",
       "renovacionAutomatica": false,
       "estado": "activa"
     },
@@ -86,7 +97,7 @@
       "frecuencia": "mensual",
       "descripcion": "Plan mensual HD",
       "categoria": "Entretenimiento",
-      "fechaInicio": "2025-05-01T00:00:00.000Z",
+      "fechaInicio": "2025-05-01",
       "renovacionAutomatica": true,
       "estado": "activa"
     },
@@ -94,11 +105,11 @@
       "id": "sub5",
       "usuarioId": "7d93",
       "nombre": "Adobe Creative Cloud",
-      "precio": 25,
+      "precio": "25000",
       "frecuencia": "mensual",
       "descripcion": "Plan Fotografía con Photoshop y Lightroom",
       "categoria": "Diseño",
-      "fechaInicio": "2025-03-01T00:00:00.000Z",
+      "fechaInicio": "2025-04-01",
       "renovacionAutomatica": true,
       "estado": "activa"
     },
@@ -110,7 +121,7 @@
       "frecuencia": "mensual",
       "descripcion": "Plan mensual con calidad 4K",
       "categoria": "Entretenimiento",
-      "fechaInicio": "2025-06-02T00:00:00.000Z",
+      "fechaInicio": "2025-06-02",
       "renovacionAutomatica": false,
       "estado": "activa"
     },
@@ -122,7 +133,7 @@
       "frecuencia": "mensual",
       "descripcion": "Aprende sin anuncios",
       "categoria": "Educación",
-      "fechaInicio": "2025-06-03T00:00:00.000Z",
+      "fechaInicio": "2025-06-03",
       "renovacionAutomatica": true,
       "estado": "activa"
     },
@@ -134,7 +145,7 @@
       "frecuencia": "mensual",
       "descripcion": "Envíos rápidos y acceso a Prime Video",
       "categoria": "Servicios",
-      "fechaInicio": "2025-04-10T00:00:00.000Z",
+      "fechaInicio": "2025-04-10",
       "renovacionAutomatica": true,
       "estado": "activa"
     },
@@ -146,7 +157,7 @@
       "frecuencia": "mensual",
       "descripcion": "Acceso ilimitado a cursos especializados",
       "categoria": "Educación",
-      "fechaInicio": "2025-01-12T00:00:00.000Z",
+      "fechaInicio": "2025-01-12",
       "renovacionAutomatica": false,
       "estado": "inactiva"
     },
@@ -158,7 +169,7 @@
       "frecuencia": "mensual",
       "descripcion": "Accede a plantillas premium",
       "categoria": "Diseño",
-      "fechaInicio": "2025-06-05T00:00:00.000Z",
+      "fechaInicio": "2025-06-05",
       "renovacionAutomatica": true,
       "estado": "activa"
     },
@@ -173,6 +184,30 @@
       "fechaInicio": "2025-06-09",
       "renovacionAutomatica": "on",
       "estado": "activa"
+    },
+    {
+      "id": "5a16",
+      "usuarioId": "7d93",
+      "nombre": "Figma",
+      "precio": "50000",
+      "frecuencia": "bimestral",
+      "descripcion": "Nuevas funciones Plus de Diseño Web",
+      "categoria": "Software",
+      "fechaInicio": "2025-05-01",
+      "estado": "activa",
+      "renovacionAutomatica": "on"
+    },
+    {
+      "id": "88a4",
+      "usuarioId": "e63a",
+      "nombre": "El Tiempo Plus",
+      "precio": "5500",
+      "frecuencia": "mensual",
+      "descripcion": "Acceso Aplicacion de El Tiempo",
+      "categoria": "Noticias",
+      "fechaInicio": "2025-05-10",
+      "estado": "activa",
+      "renovacionAutomatica": "on"
     }
   ]
 }

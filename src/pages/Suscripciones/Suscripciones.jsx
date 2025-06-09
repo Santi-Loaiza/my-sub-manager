@@ -56,7 +56,7 @@ const Suscripciones = () => {
                             <span className="descripcion">{sub.descripcion}</span>
                         </div>
                         <div className="acciones-item">
-                            <button className="editar">Editar</button>
+                            <Link to={"/panel-principal/editar/" + sub.id}><button className="editar">Editar</button></Link>
                             <button className="eliminar" onClick={() => {eliminarSuscripcion(sub.id)}}>Eliminar</button>
                         </div>
                     </div>

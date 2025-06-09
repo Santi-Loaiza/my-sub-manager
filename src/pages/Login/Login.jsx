@@ -64,7 +64,7 @@ const Login = () => {
                     console.log("Historial de login actualizado:", data)});
                     alertaRedireccion(
                         navigate,
-                        "Bienvenido " + buscarUsuario().nombres + " " + buscarUsuario().apellidos,
+                        "Bienvenido/a " + buscarUsuario().nombres + " " + buscarUsuario().apellidos,
                         "En breves segundos será redireccionado al panel principal",
                         "success",
                         "/panel-principal/suscripciones"
