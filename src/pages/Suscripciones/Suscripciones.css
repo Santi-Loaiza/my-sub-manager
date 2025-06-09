@@ -1,0 +1,112 @@
+.submanager-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.submanager-acciones {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.buscar {
+    width: 40%;
+    margin-right: 1rem;
+    padding: 0.7rem 1rem;
+    border-radius: 0.6rem;
+    border: none;
+    background-color: #14285e;
+    color: #cfd7ff;
+    box-shadow: inset 0px 0px 5px rgba(255, 255, 255, 0.1);
+    border: solid #2643e8 0.01px;
+    font-size: 1rem;
+}
+
+.nueva {
+    background-color: #147bff;
+    border: none;
+    padding: 0.7rem 1rem;
+    border-radius: 0.6rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    box-shadow: inset 0px 0px 5px rgb(7, 34, 171);
+    transition: 0.3s;
+}
+.nueva:hover {
+    background-color: #011d43;
+    color: #bfc8f6;
+}
+
+.lista {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+.item {
+    background-color: #172e6eb7;
+    padding: 1rem;
+    border-radius: 0.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 500px;
+}
+
+.item h3 {
+    margin: 0;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.item p {
+    margin: 0.2rem 0;
+    font-size: 0.9rem;
+    color: #b4c5ff;
+}
+
+.descripcion {
+    font-size: 0.85rem;
+    color: #a0aefc;
+    background: rgba(100, 100, 255, 0.2);
+    padding: 0.2rem 0.6rem;
+    border-radius: 0.5rem;
+    display: inline-block;
+    margin-top: 0.3rem;
+}
+
+.acciones-item {
+    display: flex;
+    gap: 0.6rem;
+}
+
+.editar,
+.eliminar {
+    padding: 0.6rem 0.9rem;
+    border: none;
+    border-radius: 0.5rem;
+    color: white;
+    font-weight: bold;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.editar {
+    background-color: #3c3cf7a2;
+}
+.editar:hover{
+    background-color: #033a82d4;
+}
+
+.eliminar {
+    background-color: #7c2fa3bd;
+}
+.eliminar:hover{
+    background-color: #a728ebd4;
+}

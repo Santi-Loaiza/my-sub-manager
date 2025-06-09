@@ -1,31 +1,154 @@
 {
-  "usuarios": [
+    "usuarios": [
+        {
+            "id": "1",
+            "nombres": "Santiago",
+            "apellidos": "Loaiza",
+            "usuario": "usuariosanti",
+            "contraseña": "contraseñasanti",
+            "historialLogin": [
+                "2025-06-06T19:05:45.570Z",
+                "2025-06-06T19:07:48.903Z",
+                "2025-06-07T18:28:20.469Z"
+            ]
+        },
+        {
+            "id": "7d93",
+            "nombres": "Camilo",
+            "apellidos": "Cifuentes",
+            "usuario": "cami21",
+            "contraseña": "cami21",
+            "correo": "cami21@gmail.com",
+            "historialLogin": [
+                "2025-06-07T18:48:04.628Z",
+                "2025-06-07T18:49:26.310Z",
+                "2025-06-07T19:07:25.034Z",
+                "2025-06-09T00:04:21.634Z",
+                "2025-06-09T00:25:16.703Z"
+            ]
+        },
+        {
+            "id": "b23d",
+            "nombres": "Usuario",
+            "apellidos": "De Prueba",
+            "usuario": "usuarioprueba",
+            "contraseña": "usuarioprueba",
+            "correo": "usuariprueba@example.com",
+            "historialLogin": [
+                "2025-06-09T01:23:05.573Z"
+            ]
+        }
+    ],
+  "suscripciones": [
     {
-      "id": "1",
-      "nombres": "Santiago",
-      "apellidos": "Loaiza",
-      "usuario": "usuariosanti",
-      "contraseña": "contraseñasanti",
-      "historialLogin": [
-        "2025-06-06T19:05:45.570Z",
-        "2025-06-06T19:07:48.903Z",
-        "2025-06-07T18:28:20.469Z"
-      ]
+      "id": "sub1",
+      "usuarioId": "1",
+      "nombre": "Netflix",
+      "precio": 15,
+      "descripcion": "Plan estándar con 2 pantallas",
+      "categoria": "Entretenimiento",
+      "fechaInicio": "2025-06-01T00:00:00.000Z",
+      "renovacionAutomatica": true,
+      "estado": "activa"
     },
     {
-      "id": "7d93",
-      "nombres": "Camilo",
-      "apellidos": "Cifuentes",
-      "usuario": "cami21",
-      "contraseña": "cami21",
-      "correo": "cami21@gmail.com",
-      "historialLogin": [
-        "2025-06-07T18:48:04.628Z",
-        "2025-06-07T18:49:26.310Z",
-        "2025-06-07T19:07:25.034Z",
-        "2025-06-09T00:04:21.634Z",
-        "2025-06-09T00:25:16.703Z"
-      ]
+      "id": "sub2",
+      "usuarioId": "1",
+      "nombre": "Spotify",
+      "precio": 10,
+      "descripcion": "Cuenta premium individual",
+      "categoria": "Entretenimiento",
+      "fechaInicio": "2025-05-15T00:00:00.000Z",
+      "renovacionAutomatica": true,
+      "estado": "activa"
+    },
+    {
+      "id": "sub3",
+      "usuarioId": "7d93",
+      "nombre": "Notion",
+      "precio": 8,
+      "descripcion": "Plan personal pro",
+      "categoria": "Productividad",
+      "fechaInicio": "2025-04-20T00:00:00.000Z",
+      "renovacionAutomatica": false,
+      "estado": "activa"
+    },
+    {
+      "id": "sub4",
+      "usuarioId": "b23d",
+      "nombre": "Disney+",
+      "precio": 12,
+      "descripcion": "Plan mensual HD",
+      "categoria": "Entretenimiento",
+      "fechaInicio": "2025-05-01T00:00:00.000Z",
+      "renovacionAutomatica": true,
+      "estado": "activa"
+    },
+    {
+      "id": "sub5",
+      "usuarioId": "7d93",
+      "nombre": "Adobe Creative Cloud",
+      "precio": 25,
+      "descripcion": "Plan Fotografía con Photoshop y Lightroom",
+      "categoria": "Diseño",
+      "fechaInicio": "2025-03-01T00:00:00.000Z",
+      "renovacionAutomatica": true,
+      "estado": "activa"
+    },
+    {
+      "id": "sub6",
+      "usuarioId": "1",
+      "nombre": "HBO Max",
+      "precio": 14,
+      "descripcion": "Plan mensual con calidad 4K",
+      "categoria": "Entretenimiento",
+      "fechaInicio": "2025-06-02T00:00:00.000Z",
+      "renovacionAutomatica": false,
+      "estado": "activa"
+    },
+    {
+      "id": "sub7",
+      "usuarioId": "b23d",
+      "nombre": "Duolingo Plus",
+      "precio": 7,
+      "descripcion": "Aprende sin anuncios",
+      "categoria": "Educación",
+      "fechaInicio": "2025-06-03T00:00:00.000Z",
+      "renovacionAutomatica": true,
+      "estado": "activa"
+    },
+    {
+      "id": "sub8",
+      "usuarioId": "7d93",
+      "nombre": "Amazon Prime",
+      "precio": 9,
+      "descripcion": "Envíos rápidos y acceso a Prime Video",
+      "categoria": "Servicios",
+      "fechaInicio": "2025-04-10T00:00:00.000Z",
+      "renovacionAutomatica": true,
+      "estado": "activa"
+    },
+    {
+      "id": "sub9",
+      "usuarioId": "1",
+      "nombre": "Coursera",
+      "precio": 39,
+      "descripcion": "Acceso ilimitado a cursos especializados",
+      "categoria": "Educación",
+      "fechaInicio": "2025-01-12T00:00:00.000Z",
+      "renovacionAutomatica": false,
+      "estado": "inactiva"
+    },
+    {
+      "id": "sub10",
+      "usuarioId": "b23d",
+      "nombre": "Canva Pro",
+      "precio": 12,
+      "descripcion": "Accede a plantillas premium",
+      "categoria": "Diseño",
+      "fechaInicio": "2025-06-05T00:00:00.000Z",
+      "renovacionAutomatica": true,
+      "estado": "activa"
     }
   ]
 }

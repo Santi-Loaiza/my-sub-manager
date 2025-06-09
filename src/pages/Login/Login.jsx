@@ -67,7 +67,7 @@ const Login = () => {
                         "Bienvenido " + buscarUsuario().nombres + " " + buscarUsuario().apellidos,
                         "En breves segundos será redireccionado al panel principal",
                         "success",
-                        "/panel-principal"
+                        "/panel-principal/suscripciones"
                     );
                 } else {
                     alertaError("Error", "Usuario y/o contraseña incorrectos", "error");
