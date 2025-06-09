@@ -37,3 +37,30 @@ export function generarToken() {
         Math.random().toString(36).substring(2, 10)
     );
 }
+
+export function alertaConfirmacion(id, apiSuscripciones, getSuscripciones) {
+  Swal.fire({
+    title: "¿Estas seguro?",
+    text: "No se puede reviertir la acción!",
+    icon: "warning",
+    showCancelButton: true,
+    confirmButtonColor: "#3085d6",
+    cancelButtonColor: "#d33",
+    confirmButtonText: "Si, Eliminar"
+  }).then((result) => {
+    if (result.isConfirmed) {
+      fetch(apiSuscripciones + "/" + id, {
+        method: "DELETE"
+      }).then(() => {
+        getSuscripciones()
+      }).catch((error) => {
+        console.log(error)
+      })
+      Swal.fire({
+        title: "Eliminado",
+        text: "La suscripcion ha sido eliminada",
+        icon: "success"
+      });
+    }
+  });
+}

@@ -163,18 +163,6 @@
       "estado": "activa"
     },
     {
-      "id": "418d",
-      "usuarioId": "7d93",
-      "nombre": "Platzi",
-      "precio": 20000,
-      "frecuencia": "mensual",
-      "descripcion": "Cursos virtuales",
-      "categoria": "Educación",
-      "fechaInicio": "2025-06-09T00:00:00.000Z",
-      "renovacionAutomatica": true,
-      "estado": "activa"
-    },
-    {
       "id": "0ed1",
       "usuarioId": "7d93",
       "nombre": "WinSport+",

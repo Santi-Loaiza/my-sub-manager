@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import './Suscripciones.css'
 import { Link } from "react-router-dom";
+import { alertaConfirmacion } from "../../helpers/functions";
 let apiSuscripciones = 'http://localhost:3000/suscripciones'
 
 const Suscripciones = () => {
@@ -22,11 +23,15 @@ const Suscripciones = () => {
         getSuscripciones();
     }, []);
 
-
+    // Mostrar suscripciones segun el valor de busqueda
     const filtradas = suscripciones.filter((sub) =>
         sub.usuarioId === usuario.id &&
         sub.nombre.toLowerCase().includes(filtro.toLowerCase())
     );
+
+    function eliminarSuscripcion(id){
+        alertaConfirmacion(id, apiSuscripciones, getSuscripciones)
+    }
 
     return (
         <div className="submanager-container">
@@ -52,7 +57,7 @@ const Suscripciones = () => {
                         </div>
                         <div className="acciones-item">
                             <button className="editar">Editar</button>
-                            <button className="eliminar">Eliminar</button>
+                            <button className="eliminar" onClick={() => {eliminarSuscripcion(sub.id)}}>Eliminar</button>
                         </div>
                     </div>
                 ))}
