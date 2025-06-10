@@ -5,6 +5,7 @@ import Login from "../pages/Login/Login";
 import PanelPrincipal from "../pages/PanelPrincipal/PanelPrincipal";
 import Register from "../pages/Register/Register";
 import Suscripciones from "../pages/Suscripciones/Suscripciones";
+import Usuario from "../pages/Usuario/Usuario";
 
 export let Enrutador = [
     {
@@ -30,6 +31,10 @@ export let Enrutador = [
             {
                 path: "editar/:id",
                 element: <EditarSuscripcion />
+            },
+            {
+                path: "usuario",
+                element: <Usuario />
             }
         ]
     }

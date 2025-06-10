@@ -94,3 +94,7 @@ nav .type1:hover::after {
     visibility: visible;
     transform: scale(100) translateX(2px);
 }
+
+nav .link-panel-suscripciones{
+    text-decoration: none;
+}
