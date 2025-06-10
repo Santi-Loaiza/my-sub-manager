@@ -42,6 +42,37 @@
     color: #bfc8f6;
 }
 
+ .submanager-container .filtros-categorias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    justify-content: center;
+}
+
+.submanager-container .filtros-categorias button {
+    padding: 0.5rem 1rem;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #2560be9c, #8a5cf6b7);
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.submanager-container  .filtros-categorias button:hover {
+    transform: scale(1.02);
+    opacity: 0.9;
+}
+
+.submanager-container .filtros-categorias button.activo {
+    background: linear-gradient(90deg, #9233ea86, #ec489aa0);
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(146, 51, 234, 0.31);
+}
+
 .submanager-container .lista {
     display: flex;
     flex-direction: column;

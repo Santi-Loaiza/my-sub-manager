@@ -11,6 +11,7 @@ const Suscripciones = () => {
     // Declaracion de estados
     const [suscripciones, setSuscripciones] = useState([]);
     const [filtro, setFiltro] = useState("");
+    const [categoriaSeleccionada, setCategoriaSeleccionada] = useState("");
 
     // Obtener las suscripciones por medio del API
     function getSuscripciones() {
@@ -26,8 +27,16 @@ const Suscripciones = () => {
     // Mostrar suscripciones segun el valor de busqueda
     const filtradas = suscripciones.filter((sub) =>
         sub.usuarioId === usuario.id &&
-        sub.nombre.toLowerCase().includes(filtro.toLowerCase())
+        sub.nombre.toLowerCase().includes(filtro.toLowerCase()) &&
+        (categoriaSeleccionada === "" || sub.categoria === categoriaSeleccionada)
     );
+
+    // Obtener categorías de las suscripciones del usuario
+    const categorias = Array.from(new Set(
+        suscripciones
+            .filter(sub => sub.usuarioId === usuario.id)
+            .map(sub => sub.categoria)
+    ));
 
     function eliminarSuscripcion(id){
         alertaConfirmacion(id, apiSuscripciones, getSuscripciones)
@@ -46,6 +55,23 @@ const Suscripciones = () => {
                 <Link to="/panel-principal/agregar-suscripcion" >
                     <button className="nueva">+ Nueva suscripción</button>
                 </Link>
+            </div>
+             <div className="filtros-categorias">
+                <button
+                    className={categoriaSeleccionada === "" ? "activo" : ""}
+                    onClick={() => setCategoriaSeleccionada("")}
+                >
+                    Todas
+                </button>
+                {categorias.map((cat) => (
+                    <button
+                        key={cat}
+                        className={categoriaSeleccionada === cat ? "activo" : ""}
+                        onClick={() => setCategoriaSeleccionada(cat)}
+                    >
+                        {cat}
+                    </button>
+                ))}
             </div>
             <div className="lista">
                 {filtradas.map((sub) => (

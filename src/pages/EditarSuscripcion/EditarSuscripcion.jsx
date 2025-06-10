@@ -46,7 +46,7 @@ const EditarSuscripcion = () => {
             categoria: categoria,
             fechaInicio: fechaInicio,
             renovacionAutomatica: renovacionAutomatica,
-            estado: "activa"
+            estado: estado
         };
         fetch(apiSuscripciones + "/" + id, {
             method: "PATCH",
@@ -146,8 +146,7 @@ const EditarSuscripcion = () => {
                 </label>
                 <label className='container-checkbox'>
                     <input className="checkbox ui-checkbox" type="checkbox"
-                        onChange={(e) => setRenovacionAutomatica(e.target.value)}
-                        checked={renovacionAutomatica} />
+                        onChange={(e) => setRenovacionAutomatica(e.target.value)} />
                     <span>Renovacion Automatica</span>
                 </label>
                 <button type="button" className="submit" onClick={editarSuscripcion} >Actualizar suscripcion</button>
