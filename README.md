@@ -1,12 +1,153 @@
-# React + Vite
+# 📂 My SubManager
+My SubManager es una aplicación web diseñada para gestionar las suscripciones digitales de los usuarios de forma centralizada, clara y eficiente.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Descripción
+Esta app permite a los usuarios autenticados registrar y controlar sus suscripciones a diferentes servicios (como Netflix, Spotify, YouTube, etc.), con información relevante. Permite visualizar, agregar, editar y eliminar suscripciones con una interfaz moderna e intuitiva.
 
-Currently, two official plugins are available:
+Ideal para personas que desean llevar el control de sus pagos digitales mensuales y acceder rápidamente al estado de cada servicio.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Tecnologías utilizadas
+React JS – Biblioteca principal para la interfaz de usuario
+JSON-Server – Simulación de API REST con datos en formato JSON
+React Router DOM – Ruteo dinámico entre vistas
+Fetch API – Alternativa para peticiones HTTP
+SweetAlert2 – Alertas modernas y estilizadas
+Heroicons – Iconografía para una interfaz más visual
+CSS – Estilos personalizados
+HTML – Estructura base del proyecto
 
-## Expanding the ESLint configuration
+## 🎨 Paleta de colores
+#0d1031
+#1E0038
+#261552
+#033A82
+#2643e8
+#7a8efa
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+##🔤 Tipografías
+Poppins – Títulos y botones
+
+Roboto – Contenido general
+
+##🚀 Ejecución del proyecto
+El proyecto se ejecuta con dos servicios en paralelo:
+
+```
+Backend: JSON-Server (puerto por defecto: http://localhost:3000)
+Frontend: Vite + React (puerto por defecto: http://localhost:5173)
+```
+
+##💾 Instalación
+Sigue estos pasos para clonar y ejecutar el proyecto localmente:
+
+```
+# 1. Clona el repositorio
+git clone https://github.com/Santi-Loaiza/my-sub-manager.git
+cd my-sub-manager
+
+# 2. Instala las dependencias del frontend
+npm install
+
+# 3. Inicia el servidor JSON (backend simulado)
+npm json-server --watch db.json --port 3000
+
+# 4. En una nueva terminal, inicia el frontend con Vite
+npm run dev
+```
+
+## 🧩 Modelo de datos (NoSQL)
+
+### Usuarios
+```
+{
+  "id": "7d93",
+  "nombres": "Camilo",
+  "apellidos": "Cifuentes",
+  "usuario": "cami21",
+  "contraseña": "cami21",
+  "correo": "cami21@gmail.com",
+  "historialLogin": [
+    "2025-06-07T18:48:04.628Z",
+    ...
+  ]
+}
+```
+### Suscripciones
+```
+{
+  "id": 1,
+  "nombre": "Spotify",
+  "color": "#1DB954",
+  "progreso": 80,
+  "imagen": "https://link-a-icono.com/spotify.png",
+  "docente": "Premium",  
+  "aula": "Mensual"
+}
+```
+🔗 Cada suscripción está asociada a un usuario autenticado y puede ser gestionada completamente desde la interfaz.
+
+🗂️ Estructura propuesta del proyecto
+```
+my-sub-manager/
+│
+├── public/                         # Archivos públicos
+│
+├── src/
+│   ├── assets/                     # Imágenes, íconos, fuentes, etc.
+│
+│   ├── components/                 # Componentes reutilizables
+│   │   ├── Contenido/              # Subcomponente específico
+│   │   │   ├── Contenido.jsx
+│   │   │   └── Contenido.css
+│   │   ├── NavBar/                 # Menú de navegación
+│   │   │   ├── NavBar.jsx
+│   │   │   └── NavBar.css
+│   │   └── RutaProtegida.jsx       # Componente de protección de rutas
+│
+│   ├── pages/                      # Páginas o vistas principales
+│   │   ├── AgregarSuscripcion/
+│   │   │   ├── AgregarSuscripcion.jsx
+│   │   │   └── AgregarSuscripcion.css
+│   │   ├── EditarSuscripcion/
+│   │   │   └── EditarSuscripcion.jsx
+│   │   ├── Login/
+│   │   │   └── Login.jsx
+│   │   │   └── Login.css
+│   │   ├── Register/
+│   │   │   └── Register.jsx
+│   │   │   └── Register.css
+│   │   ├── PanelPrincipal/
+│   │   │   └── PanelPrincipal.jsx
+│   │   │   └── PanelPrincipal.css
+│   │   ├── Suscripciones/
+│   │   │   └── Suscripciones.jsx
+│   │   │   └── Suscripciones.css
+│   │   └── Usuario/
+│   │       └── Usuario.jsx
+│   │       └── Usuario.css
+│
+│   ├── router/
+│   │   └── Enrutador.jsx          # Archivo de rutas (React Router)
+│
+│   ├── services/                  # Lógica de conexión con APIs
+│   │   ├── suscripcionesAPI.js    # Lógica fetch/axios (renombra `fake-api.json`)
+│   │   └── authAPI.js             # (opcional) Servicios relacionados con usuario
+│
+│   ├── helpers/                   # Funciones utilitarias
+│   │   ├── functions.jsx
+│
+│   ├── main.jsx                   # Punto de entrada principal
+│   └── index.css                    # Estilos globales
+│
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package.json
+├── package-lock.json
+└── README.md
+```
+
+## 📫 Autor
+Desarrollado por Santiago Loaiza
+Estudiante de Desarrollo de Software
+🚀 ¡Gracias por visitar este proyecto!
