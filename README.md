@@ -60,29 +60,30 @@ npm run dev
 ### Usuarios
 ```
 {
-  "id": "7d93",
-  "nombres": "Camilo",
-  "apellidos": "Cifuentes",
-  "usuario": "cami21",
-  "contraseña": "cami21",
-  "correo": "cami21@gmail.com",
-  "historialLogin": [
-    "2025-06-07T18:48:04.628Z",
-    ...
-  ]
-}
+      "id": "1",
+      "nombres": "Santiago",
+      "apellidos": "Loaiza",
+      "usuario": "usuariosanti",
+      "contraseña": "contraseñasanti",
+      "historialLogin": [
+        "2025-06-06T19:05:45.570Z"
+      ]
+    }
 ```
 ### Suscripciones
 ```
 {
-  "id": 1,
-  "nombre": "Spotify",
-  "color": "#1DB954",
-  "progreso": 80,
-  "imagen": "https://link-a-icono.com/spotify.png",
-  "docente": "Premium",  
-  "aula": "Mensual"
-}
+      "id": "sub7",
+      "usuarioId": "b23d",
+      "nombre": "Duolingo Plus",
+      "precio": 7,
+      "frecuencia": "mensual",
+      "descripcion": "Aprende sin anuncios",
+      "categoria": "Educación",
+      "fechaInicio": "2025-06-03",
+      "renovacionAutomatica": true,
+      "estado": "activa"
+    }
 ```
 🔗 Cada suscripción está asociada a un usuario autenticado y puede ser gestionada completamente desde la interfaz.
 
