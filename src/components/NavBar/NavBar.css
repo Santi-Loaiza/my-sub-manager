@@ -98,3 +98,55 @@ nav .type1:hover::after {
 nav .link-panel-suscripciones{
     text-decoration: none;
 }
+
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+    gap: 15px;
+  }
+
+  nav .logo-container-nav {
+    justify-content: flex-start;
+  }
+
+  nav .icon-sub-manager-panel-principal {
+    width: 50px;
+  }
+
+  nav .my-sub-manager-title {
+    font-size: 1.2rem;
+    text-align: left;
+  }
+
+  nav .container-buttons-nav {
+    margin: 0;
+    width: 100%;
+  }
+
+  nav .container-buttons-nav ul {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    padding: 0;
+  }
+
+  nav .container-buttons-nav ul li {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  nav .container-buttons-nav .usuario-button,
+  nav .button {
+    width: 100%;
+    text-align: center;
+    padding-left: 10px;
+  }
+
+  nav .btn-txt {
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+}

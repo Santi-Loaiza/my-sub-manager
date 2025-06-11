@@ -169,3 +169,60 @@
     opacity: 0;
   }
 }
+
+/* Tablets */
+@media (max-width: 768px) {
+  .main-login .container-login {
+    gap: 30px;
+    padding: 0 20px;
+  }
+
+  .main-login .my-sub-manager-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .main-login .icon-sub-manager-login {
+    width: 80px;
+  }
+
+  .main-login .form {
+    max-width: 100%;
+    padding: 15px;
+  }
+}
+
+/* Móviles */
+@media (max-width: 480px) {
+  .main-login {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .main-login .form {
+    border-radius: 15px;
+    padding: 10px;
+  }
+
+  .main-login .submit {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .main-login .title {
+    font-size: 22px;
+  }
+
+  .main-login .message,
+  .main-login .signin {
+    font-size: 13px;
+  }
+
+  .main-login .my-sub-manager-title {
+    font-size: 1.5rem;
+  }
+
+  .main-login .icon-sub-manager-login {
+    width: 60px;
+  }
+}

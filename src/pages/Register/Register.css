@@ -175,3 +175,39 @@
     opacity: 0;
   }
 }
+@media screen and (max-width: 768px) {
+  .main-register {
+    padding: 20px;
+    height: auto;
+  }
+
+  .main-register .container-register {
+    gap: 30px;
+    width: 100%;
+  }
+
+  .main-register .logo-container {
+    flex-direction: row;
+    gap: 6px;
+  }
+
+  .main-register .icon-sub-manager-register {
+    width: 65px;
+  }
+
+  .main-register .my-sub-manager-title {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .main-register .form {
+    width: 90%;
+    max-width: 100%;
+    padding: 20px 15px;
+  }
+
+  .main-register .flex {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
