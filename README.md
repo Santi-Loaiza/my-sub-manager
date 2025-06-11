@@ -7,27 +7,27 @@ Esta app permite a los usuarios autenticados registrar y controlar sus suscripci
 Ideal para personas que desean llevar el control de sus pagos digitales mensuales y acceder rápidamente al estado de cada servicio.
 
 ## 🛠️ Tecnologías utilizadas
-React JS – Biblioteca principal para la interfaz de usuario
-JSON-Server – Simulación de API REST con datos en formato JSON
-React Router DOM – Ruteo dinámico entre vistas
-Fetch API – Alternativa para peticiones HTTP
-SweetAlert2 – Alertas modernas y estilizadas
-Heroicons – Iconografía para una interfaz más visual
-CSS – Estilos personalizados
-HTML – Estructura base del proyecto
+- **React JS** – Biblioteca principal para la interfaz de usuario
+- **JSON-Server** – Simulación de API REST con datos en formato JSON
+- **React Router DOM** – Ruteo dinámico entre vistas
+- **Fetch API** – Alternativa para peticiones HTTP
+- **SweetAlert2** – Alertas modernas y estilizadas
+- **Heroicons** – Iconografía para una interfaz más visual
+- **CSS** – Estilos personalizados
+- **HTML** – Estructura base del proyecto
 
 ## 🎨 Paleta de colores
-#0d1031
-#1E0038
-#261552
-#033A82
-#2643e8
-#7a8efa
+- #0d1031
+- #1E0038
+- #261552
+- #033A82
+- #2643e8
+- #7a8efa
 
 ##🔤 Tipografías
-Poppins – Títulos y botones
+- **Poppins** – Títulos y botones
 
-Roboto – Contenido general
+- **Roboto** – Contenido general
 
 ##🚀 Ejecución del proyecto
 El proyecto se ejecuta con dos servicios en paralelo:
